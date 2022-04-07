@@ -51,5 +51,11 @@
     
 }
 
+body{
+    background-image: url('../fondo/lost-places-776297__340.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 
-
+}
