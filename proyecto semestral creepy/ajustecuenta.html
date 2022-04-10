@@ -17,45 +17,161 @@
 
 <body class="body1">
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark espaciado ">
-        <div class="container-fluid">
-          <a class="navbar-brand " href="inicio.html"><img src="logo bajo menu/creepypasta_logo_fit.png" class="logo_menu" alt="logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="mynavbar">
-            <ul class="navbar-nav me-auto centrado">
-              <li class="nav-item">
-                <a class="nav-link text-danger" href="inicio.html">INICIO</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-danger" href="informacion.html">INFORMACIÓN</a>
-              </li>
-              <li class="nav-item dropdown d-flex navbar-nav centrado ">
-                <a class="nav-link dropdown-toggle text-danger" href="#" role="button" data-bs-toggle="dropdown">CUENTA </a>
-                <ul class="dropdown-menu  ">
-                  <li><a class="dropdown-item text-danger " href="tuscreepy.html">TUS HISTORIAS</a></li>
-                  <li><a class="dropdown-item text-danger " href="menuadmi.html">COSAS ADMI</a></li>
-                  <li><a class="dropdown-item text-danger " href="ajustecuenta.html">AJUSTES CUENTA</a></li>
-                  <li><a class="dropdown-item text-danger " href="agregar">CERRAR SESIÓN</a></li>
-                </ul>
-              </li>
-            </ul>
-       
-              <ul class="nav justify-content-end navbar-nav centrado">
-                <li class="nav-item">
-                  <a class="nav-link text-danger" href="logueate.html">LOGIN</a>
-                </li>
-              </ul>
-              <ul class="nav justify-content-end navbar-nav centrado">
-                <li class="nav-item">
-                  <a class="nav-link text-danger" href="registrate.html">REGISTER</a>
-                </li>
-              </ul>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark espaciado  fixed-top ">
+    <div class="container-fluid">
+      <a class="navbar-brand " href="inicio.html"><img src="logo bajo menu/creepypasta_logo_fit.png" class="logo_menu"
+          alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto centrado">
+          <li class="nav-item ">
+            <a class="nav-link text-danger" href="inicio.html">VOLVER SIN MODIFICAR</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-danger" href="#section1">MODIFICAR DATOS</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-danger" href="#section2">MODIFICAR CONTRASEÑA</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
   
+
+
+
+
+
+  <div class="container-fluid centrado espaciado col-md-9 creepyborde1">
+
+
+    <div id="section1" class="row espaciado centrado">
+      <form class="row g-3 " action="logueate.html">
+
+
+
+        <div class="col-md-12 espaciado">
+          <label for="validationDefault01" class="form-label">
+            <h4 style="text-shadow: 2px 2px 6px rgb(138, 112, 112);"> Su nombre y apellido actualmente son</h4>
+          </label>
+          <input type="text" class="form-control" id="validationDefault01">
+        </div>
+
+        <div class="col-md-6">
+          <label for="validationDefault01" class="form-label">
+            <h4 style="text-shadow: 2px 2px 6px red;"> Ingrese su nuevo Nombre</h4>
+          </label>
+          <input type="text" class="form-control" id="validationDefault01" required>
+        </div>
+        <div class="col-md-6">
+          <label for="validationDefault02" class="form-label">
+            <h4 style="text-shadow: 2px 2px 6px red;"> Ingrese su nuevo Apellidos</h4>
+          </label>
+          <input type="text" class="form-control" id="validationDefault02" required>
+        </div>
+        <div class="col-md-12">
+          <label for="validationDefault01" class="form-label">
+            <h4 style="text-shadow: 2px 2px 6px rgb(138, 112, 112);"> Su Correo Electronico actualmente es</h4>
+          </label>
+          <input type="text" class="form-control" id="validationDefault01">
+        </div>
+        <div class="col-md-6">
+          <label for="validationDefaultUsername" class="form-label">
+            <h4 style="text-shadow: 2px 2px 6px red;">Ingrese su nuevo Correo Electronico</h4>
+          </label>
+          <div class="input-group">
+            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+            <input type="email" class="form-control" id="validationDefaultUsername"
+              aria-describedby="inputGroupPrepend2" required>
           </div>
         </div>
-      </nav>
+        <div class="col-md-6">
+          <label for="validationDefaultUsername" class="form-label">
+            <h4 style="text-shadow: 2px 2px 6px red;"> confirme su nuevo Correo Electronico</h4>
+          </label>
+          <div class="input-group">
+            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+            <input type="email" class="form-control" id="validationDefaultUsername"
+              aria-describedby="inputGroupPrepend2" required>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <h1 style="text-shadow: 2px 2px 6px red;">Confirme cambio con su contraseña</h1>
+        </div>
+        <div class="col-md-6">
+          <label for="validationDefault05" class="form-label">
+            <h4 style="text-shadow: 2px 2px 6px red;">confirme cambio con su contraseña</h4>
+          </label>
+          <input type="password" class="form-control" id="validationDefault05" required>
+        </div>
+        <div class="col-md-6">
+          <label for="validationDefault05" class="form-label">
+            <h4 style="text-shadow: 2px 2px 6px red;">confirme cambio con su contraseña</h4>
+          </label>
+          <input type="password" class="form-control" id="validationDefault05" required>
+        </div>
+        <div class="col-12  ">
+          <button class="btn btn-danger " type="submit ">
+            <h5 style="color: black;">Confirmar modificacion de la cuenta</h5>
+          </button>
+        </div>
+
+      </form>
+    </div>
+
+    <div id="section2" class="row  espaciado centrado">
+      <form class="row g-3 espaciado  centrado " action="logueate.html">
+
+        <div class="col-md-12 espaciado">
+          <h1 style="text-shadow: 2px 2px 6px red;">En este lugar podra modificar su contraseña</h1>
+        </div>
+
+        <div class="col-md-6 ">
+          <label for="validationDefault05" class="form-label">
+            <h4 style="text-shadow: 2px 2px 6px red;">Ingrese su nueva contraseña</h4>
+          </label>
+          <input type="password" class="form-control" id="validationDefault05" required>
+        </div>
+        <div class="col-md-6 ">
+          <label for="validationDefault05" class="form-label">
+            <h4 style="text-shadow: 2px 2px 6px red;">Ingrese su nueva contraseña</h4>
+          </label>
+          <input type="password" class="form-control" id="validationDefault05" required>
+        </div>
+
+        <div class="col-md-6 espaciado">
+          <label for="validationDefault05" class="form-label">
+            <h4 style="text-shadow: 2px 2px 6px red;">confirme cambio con su contraseña</h4>
+          </label>
+          <input type="password" class="form-control" id="validationDefault05" required>
+        </div>
+        <div class="col-md-6 espaciado">
+          <label for="validationDefault05" class="form-label">
+            <h4 style="text-shadow: 2px 2px 6px red;">Confirme cambio con su contraseña</h4>
+          </label>
+          <input type="password" class="form-control" id="validationDefault05" required>
+        </div>
+
+        <div class="col-12  ">
+          <button class="btn btn-danger " type="submit ">
+            <h5 style="color: black;">Confirmar modificacion de contraseña</h5>
+          </button>
+        </div>
+
+      </form>
+    </div>
+
+
+  </div>
+
+
+
+
+
 
 </body>
 
