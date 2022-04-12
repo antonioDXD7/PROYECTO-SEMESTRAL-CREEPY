@@ -59,7 +59,7 @@
   </nav>
 
 
-  <div class="container-fluid centrado   col-md-10 col-sm-10  ">
+  <div class="container-fluid centrado   col-md-10 col-sm-10  "  style="margin-top: 2%;">
     <div class="row alert alert-danger centrado  ">
       <p>
       <h3>AVISO:</h3> Cada creepypasta subido sera analizado por los administradores de la pagina, luego estos
@@ -75,14 +75,28 @@
 
 
 
-  <div class="container-fluid centrado  col-md-8 col-sm-8 creepyborde1">
-    <form action="/tuscreepy.html">
+  <div class="container-fluid centrado  col-md-8 col-sm-8 creepyborde1" >
+    <form action="tuscreepy.html" enctype="multipart/form-data" name="SUBIRCREEPY" >
       <div class="mb-3 mt-3">
         <h1 style="text-shadow: 2px 2px 6px red;">INGRESE SU IMAGEN</h1>
 
         <input type="file" class="form-control" id="inputGroupFile01" required>
 
 
+      </div>
+
+      <div class="container mt-3">
+        <h2 style="text-shadow: 2px 2px 6px red;">INGRESE SU CATEGORIA DE CREEPYPASTA</h2>
+          <div class="form-floating mb-3 mt-3" >
+            <select class="form-select" id="sel1" name="GUARDARTIPOCREEPY" >
+              <option>ANIME Y MANGA</option>
+              <option>COMIC Y CARICATURAS</option>
+              <option>SERIES Y PELICULAS</option>
+              <option>ORIGINALES</option>
+              <option>PERSONAJES CONOCIDOS</option>
+            </select>
+            <label for="sel1" class="form-label">Select list (escoja 1):</label>
+          </div>
       </div>
 
 
@@ -115,21 +129,6 @@
 
       </div>
 
-      <div class="mb-12 mt-12">
-
-        <li class="nav-item dropdown d-flex navbar-nav centrado">
-          <H3 class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown"> INGRESE LA CATEGORIA DEL CREEPYPASTA
-          </H3>
-          <ul class="dropdown-menu  ">
-            <li><a class="dropdown-item text-black " >ANIME Y MANGA</a></li>
-            <li><a class="dropdown-item text-black " >COMIC Y CARICATURAS</a></li>
-            <li><a class="dropdown-item text-black " >SERIES Y PELICULAS</a></li>
-            <li><a class="dropdown-item text-black " >ORIGINALES</a></li>
-            <li><a class="dropdown-item text-black " >PERSONAJES CONOCIDOS</a></li>
-          </ul>
-        </li>
-
-      </div>
 
       <div class="col-12 ">
         <button class="btn btn-danger " type="submit ">
