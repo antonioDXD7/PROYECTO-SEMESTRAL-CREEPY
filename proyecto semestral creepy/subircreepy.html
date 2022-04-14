@@ -16,50 +16,53 @@
 </head>
 
 <body class="body2">
+  <div class="container-fluid fixed-top col-12">
 
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark  ">
-    <div class="container-fluid">
-      <a class="navbar-brand " href="inicio.html"><img src="logo bajo menu/creepypasta_logo_fit.png" class="logo_menu"
-          alt="logo"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mynavbar">
-        <ul class="navbar-nav me-auto centrado">
-          <li class="nav-item">
-            <a class="nav-link text-danger" href="inicio.html">INICIO</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-danger" href="informacion.html">INFORMACIÓN</a>
-          </li>
-          <li class="nav-item dropdown d-flex navbar-nav centrado ">
-            <a class="nav-link dropdown-toggle text-danger" href="#" role="button" data-bs-toggle="dropdown">CUENTA </a>
-            <ul class="dropdown-menu  ">
-              <li><a class="dropdown-item text-danger " href="tuscreepy.html">TUS HISTORIAS</a></li>
-              <li><a class="dropdown-item text-danger " href="menuadmi.html">COSAS ADMI</a></li>
-              <li><a class="dropdown-item text-danger " href="ajustecuenta.html">AJUSTES CUENTA</a></li>
-              <li><a class="dropdown-item text-danger " href="inicio.html">CERRAR SESIÓN</a></li>
-            </ul>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark  ">
+      <div class="container-fluid">
+        <a class="navbar-brand " href="inicio.html"><img src="logo bajo menu/creepypasta_logo_fit.png" class="logo_menu"
+            alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto centrado">
+            <li class="nav-item">
+              <a class="nav-link text-danger" href="inicio.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-danger" href="informacion.html">INFORMACIÓN</a>
+            </li>
+            <li class="nav-item dropdown d-flex navbar-nav centrado ">
+              <a class="nav-link dropdown-toggle text-danger" href="#" role="button" data-bs-toggle="dropdown">CUENTA
+              </a>
+              <ul class="dropdown-menu  ">
+                <li><a class="dropdown-item text-danger " href="tuscreepy.html">TUS HISTORIAS</a></li>
+                <li><a class="dropdown-item text-danger " href="menuadmi.html">COSAS ADMI</a></li>
+                <li><a class="dropdown-item text-danger " href="ajustecuenta.html">AJUSTES CUENTA</a></li>
+                <li><a class="dropdown-item text-danger " href="inicio.html">CERRAR SESIÓN</a></li>
+              </ul>
+            </li>
+          </ul>
 
-        <ul class="nav justify-content-end navbar-nav centrado">
-          <li class="nav-item">
-            <a class="nav-link text-danger" href="logueate.html">LOGIN</a>
-          </li>
-        </ul>
-        <ul class="nav justify-content-end navbar-nav centrado">
-          <li class="nav-item">
-            <a class="nav-link text-danger" href="registrate.html">REGISTER</a>
-          </li>
-        </ul>
+          <ul class="nav justify-content-end navbar-nav centrado">
+            <li class="nav-item">
+              <a class="nav-link text-danger" href="logueate.html">LOGIN</a>
+            </li>
+          </ul>
+          <ul class="nav justify-content-end navbar-nav centrado">
+            <li class="nav-item">
+              <a class="nav-link text-danger" href="registrate.html">REGISTER</a>
+            </li>
+          </ul>
 
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
 
 
-  <div class="container-fluid centrado   col-md-10 col-sm-10  "  style="margin-top: 2%;">
+  <div class="container-fluid centrado   col-md-10 col-sm-10  " style="margin-top: 13%;">
     <div class="row alert alert-danger centrado  ">
       <p>
       <h3>AVISO:</h3> Cada creepypasta subido sera analizado por los administradores de la pagina, luego estos
@@ -73,74 +76,93 @@
   </div>
 
 
+  <div class=" container centrado">
+
+    <div class="row" style="margin-top: 5%; margin-bottom: 5%;">
+      <div class="col-md-2 hidden-sm"></div>
+
+      <div class="col-md-8 col-sm-12  creepyborderegistro">
+        <form action="tuscreepy.html"  enctype="multipart/form-data" name="registro18">
+          <h1 class="centrado letrasregistroylogin">SUBIDA DE CREEPYPASTA</h1>
+          <div class="row letrasregistroylogin">
+
+            <div class="form-group col-md-6 col-sm-6">
+              <label>
+                <h4>Ingrese su imagen</h4>
+              </label>
+              <input type="file" name="imagencreepy" class="form-control" required>
+            </div>
+
+            <div class="form-group col-md-6 col-sm-6">
+              <label for="categoriacreepysubir" class="form-label">
+                <h4>Ingrese la categoria </h4>
+              </label>
+              <select class="form-select" name="categoriacreepysubir" id="seleccion1" required>
+                <option>ANIME Y MANGA</option>
+                <option>COMIC Y CARICATURAS</option>
+                <option>SERIES Y PELICULAS</option>
+                <option>ORIGINALES</option>
+                <option>PERSONAJES CONOCIDOS</option>
+
+              </select>
+            </div>
 
 
-  <div class="container-fluid centrado  col-md-8 col-sm-8 creepyborde1" >
-    <form action="tuscreepy.html" enctype="multipart/form-data" name="SUBIRCREEPY" >
-      <div class="mb-3 mt-3">
-        <h1 style="text-shadow: 2px 2px 6px red;">INGRESE SU IMAGEN</h1>
+            <div class="form-group col-md-6 col-sm-6">
+              <label>
+                <h4>ingrese el nombre del creepypasta</h4>
+              </label>
+              <input type="text" name="nombrecreepy" class="form-control" required>
+            </div>
 
-        <input type="file" class="form-control" id="inputGroupFile01" required>
+            <div class="form-group col-md-6 col-sm-6">
+              <label>
+                <h4>Confirme nombre del creepypasta</h4>
+              </label>
+              <input type="text" name="confirmarnombrecreepy" class="form-control" required>
+            </div>
+
+            <div class="form-group col-md-12 col-sm-12">
+              <label>
+                <h4>Ingrese un resumen corto de su historia</h4>
+              </label>
+              <textarea type="text" class="form-control" rows="2" id="resumencreepy" name="text" required></textarea>
+            </div>
+
+            <div class="form-group col-md-12 col-sm-12">
+              <label>
+                <h4>Ingrese la historia de su creepypasta</h4>
+              </label>
+              <textarea type="text" class="form-control" rows="5" id="historiacreepy" name="text" required></textarea>
+            </div>
 
 
-      </div>
 
-      <div class="container mt-3">
-        <h2 style="text-shadow: 2px 2px 6px red;">INGRESE SU CATEGORIA DE CREEPYPASTA</h2>
-          <div class="form-floating mb-3 mt-3" >
-            <select class="form-select" id="sel1" name="GUARDARTIPOCREEPY" >
-              <option>ANIME Y MANGA</option>
-              <option>COMIC Y CARICATURAS</option>
-              <option>SERIES Y PELICULAS</option>
-              <option>ORIGINALES</option>
-              <option>PERSONAJES CONOCIDOS</option>
-            </select>
-            <label for="sel1" class="form-label">Select list (escoja 1):</label>
+            <div class="col-md-3  col-sm-3"></div>
+            <div class="row espaciado col-md-6 col-sm-6 ">
+              <button class="btn btn-danger" type="submit ">
+                <h5>Subir creepypasta</h5>
+              </button>
+            </div>
+            <div class="col-md-3 col-sm-3 "></div>
+
+            <div class="col-md-3 col-sm-5 "></div>
+            <div class="row espaciado col-md-6 col-sm-2 ">
+              <input type="reset" class="btn btn-danger">
+            </div>
+            <div class="col-md-3 col-sm-5 espaciado"></div>
+
           </div>
+        </form>
       </div>
-
-
-
-      <div class="mb-3 mt-3">
-        <label for="validationDefault01" class="form-label">
-          <h2 style="text-shadow: 2px 2px 6px red;">INGRESE EL NOMBRE DEL CREEPYPASTA</h2>
-        </label>
-        <input type="text" class="form-control" id="validationDefault01" required>
-      </div>
-
-
-
-
-      <div class="mb-3 mt-3">
-        <h2 style="text-shadow: 2px 2px 6px red;">INGRESE LA HISTORIA DE SU CREEPY</h2>
-        <label for="comment validationDefault01" class="form-label"></label>
-        <textarea type="text" class="form-control" rows="5" id="comment  validationDefault01" name="text"
-          required></textarea>
-
-      </div>
-
-
-
-      <div class="mb-3 mt-3">
-        <h2 style="text-shadow: 2px 2px 6px red;">INGRESE UN RESUMEN SOBRE SU CREEPYPASTA</h2>
-        <label for="comment validationDefault01" class="form-label"></label>
-        <textarea type="text" class="form-control" rows="5" id="comment  validationDefault01" name="text"
-          required></textarea>
-
-      </div>
-
-
-      <div class="col-12 ">
-        <button class="btn btn-danger " type="submit ">
-          <h5 style="color: black;">SUBIR CREEPYPASTA</h5>
-        </button>
-      </div>
-
-
-    </form>
-
+      <div class="col-md-2 hidden-sm"></div>
+    </div>
 
   </div>
+
+
+
+ 
 
 </body>
 
