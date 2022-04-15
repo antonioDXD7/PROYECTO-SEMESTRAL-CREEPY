@@ -17,7 +17,7 @@
 
 <body class="body1">
 
-  <div class="container-fluid fixed-top col-12">
+  <div class="container-fluid fixed-top col-12 ">
 
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark espaciado ">
       <div class="container-fluid">
@@ -46,136 +46,172 @@
 
   </div>
 
-  
+ 
+
+
+  <div id="section1" class=" container centrado espaciado">
+
+    <div class="row" style="margin-top: 6%;">
+      <div class="col-md-2 hidden-sm"></div>
+      <div class="col-md-8 col-sm-12  creepyborderegistro">
+        <form action="inicio.html"   name="ajustedecuenta">
+          <div class="row letrasajustecuenta">
+
+            <div class="form-group col-md-12 col-sm-12 "  >
+              <label>
+                <h4>Su nombre actualmente es:</h4>
+              </label>
+              <input type="text" name="ejemplonombre" class="form-control" >
+            </div>
+
+            <div class="form-group col-md-6 col-sm-6">
+              <label>
+                <h4>Ingrese su nuevo nombre nombre</h4>
+              </label>
+              <input type="text" name="nuevonombre" class="form-control" required>
+            </div>
+
+            <div class="form-group col-md-6 col-sm-6">
+              <label>
+                <h4>Ingrese su nuevo apellido</h4>
+              </label>
+              <input type="text" name="nuevoapellido" class="form-control" required>
+            </div>
+
+
+            <div class="form-group col-md-12 col-sm-12 espaciado">
+              <label>
+                <h4>Su correo Electronico actualmente es:</h4>
+              </label>
+              <input type="email" name="ejemplocorreo" class="form-control" >
+            </div>
+
+            <div class="form-group col-md-6 col-sm-6">
+              <label>
+                <h4>Ingrese su nuevo correo Electronico</h4>
+              </label>
+              <input type="email" name="correocambio" class="form-control" required>
+            </div>
+
+            <div class="form-group col-md-6 col-sm-6">
+              <label>
+                <h4>Confirme su nuevo correo Electronico</h4>
+              </label>
+              <input type="email" name="confirmarnuevocorreo" class="form-control" required>
+            </div>
+
+            <div class="col-md-12 col-sm-12 espaciado">
+              <h1 >Confirme cambio con su contraseña</h1>
+            </div>
 
 
 
+            <div class="form-group col-md-6 col-sm-6">
+              <label>
+                <h4>Ingrese su contraseña</h4>
+              </label>
+              <input type="password" name="contraseñaconfirmarcambios" class="form-control" required>
+            </div>
+
+            <div class="form-group col-md-6 col-sm-6">
+              <label>
+                <h4>Confirme su contraseña</h4>
+              </label>
+              <input type="password" name="contraseñaconfirmarcambios2" class="form-control" required>
+            </div>
 
 
 
-  <div id="section1" class="container-fluid centrado espaciado   col-md-9 creepybordeloginsubida" style="margin-top: 10%;">
+            <div class="col-md-3 col-sm-3 "></div>
+            <div class="row espaciado col-md-6 col-sm-6 ">
+              <input type="reset" class="btn btn-danger">
+            </div>
+            <div class="col-md-3 col-sm-3"></div>
 
+            <div class="col-md-3  col-sm-3"></div>
+            <div class="row espaciado col-md-6 col-sm-6 ">
+              <button class="btn btn-danger" type="submit ">
+                <h5>Confirmar creacion de cuenta</h5>
+              </button>
+            </div>
+            <div class="col-md-3 col-sm-3 "></div>
 
-      <form  class="row g-3  espaciado "  action="logueate.html">
-        <div class="col-md-12 espaciado">
-          <label for="validationDefault01" class="form-label">
-            <h1 class="espaciado" style="text-shadow: 2px 2px 6px rgb(138, 112, 112);"> Su nombre y apellido actualmente son</h1>
-          </label>
-          <input type="text" class="form-control" id="validationDefault01">
-        </div>
-
-        <div class="col-md-6">
-          <label for="validationDefault01" class="form-label">
-            <h4 style="text-shadow: 2px 2px 6px red;"> Ingrese su nuevo Nombre</h4>
-          </label>
-          <input type="text" class="form-control" id="validationDefault01" required>
-        </div>
-        <div class="col-md-6">
-          <label for="validationDefault02" class="form-label">
-            <h4 style="text-shadow: 2px 2px 6px red;"> Ingrese su nuevo Apellidos</h4>
-          </label>
-          <input type="text" class="form-control" id="validationDefault02" required>
-        </div>
-        <div class="col-md-12">
-          <label for="validationDefault01" class="form-label">
-            <h1 style="text-shadow: 2px 2px 6px rgb(138, 112, 112);"> Su Correo Electronico actualmente es</h1>
-          </label>
-          <input type="text" class="form-control" id="validationDefault01">
-        </div>
-        <div class="col-md-6">
-          <label for="validationDefaultUsername" class="form-label">
-            <h4 style="text-shadow: 2px 2px 6px red;">Ingrese su nuevo Correo Electronico</h4>
-          </label>
-          <div class="input-group">
-            <span class="input-group-text" id="inputGroupPrepend2">@</span>
-            <input type="email" class="form-control" id="validationDefaultUsername"
-              aria-describedby="inputGroupPrepend2" required>
           </div>
-        </div>
-        <div class="col-md-6">
-          <label for="validationDefaultUsername" class="form-label">
-            <h4 style="text-shadow: 2px 2px 6px red;"> confirme su nuevo Correo Electronico</h4>
-          </label>
-          <div class="input-group">
-            <span class="input-group-text" id="inputGroupPrepend2">@</span>
-            <input type="email" class="form-control" id="validationDefaultUsername"
-              aria-describedby="inputGroupPrepend2" required>
-          </div>
-        </div>
-        <div class="col-md-12">
-          <h1 style="text-shadow: 2px 2px 6px red;">Confirme cambio con su contraseña</h1>
-        </div>
-        <div class="col-md-6">
-          <label for="validationDefault05" class="form-label">
-            <h4 style="text-shadow: 2px 2px 6px red;">confirme cambio con su contraseña</h4>
-          </label>
-          <input type="password" class="form-control" id="validationDefault05" required>
-        </div>
-        <div class="col-md-6">
-          <label for="validationDefault05" class="form-label">
-            <h4 style="text-shadow: 2px 2px 6px red;">confirme cambio con su contraseña</h4>
-          </label>
-          <input type="password" class="form-control" id="validationDefault05" required>
-        </div>
-        <div class="col-12  ">
-          <button class="btn btn-danger " type="submit ">
-            <h5 style="color: black;">Confirmar modificacion de la cuenta</h5>
-          </button>
-        </div>
-
-      </form>
+        </form>
+      </div>
+      <div class="col-md-2 hidden-sm"></div>
     </div>
 
-
-  <div class="container-fluid centrado  col-md-9 creepybordeloginsubida" id="section2" style="margin-top: 19%; margin-bottom: 10%;"  >
-
-
-    
-      <form class="row g-3   centrado " action="logueate.html">
-
-        <div class="col-md-12 ">
-          <h1 style="text-shadow: 2px 2px 6px red;">En este lugar podra modificar su contraseña</h1>
-        </div>
-
-        <div class="col-md-6 ">
-          <label for="validationDefault05" class="form-label">
-            <h4 style="text-shadow: 2px 2px 6px red;">Ingrese su nueva contraseña</h4>
-          </label>
-          <input type="password" class="form-control" id="validationDefault05" required>
-        </div>
-        <div class="col-md-6 ">
-          <label for="validationDefault05" class="form-label">
-            <h4 style="text-shadow: 2px 2px 6px red;">Ingrese su nueva contraseña</h4>
-          </label>
-          <input type="password" class="form-control" id="validationDefault05" required>
-        </div>
-
-        <div class="col-md-6 ">
-          <label for="validationDefault05" class="form-label">
-            <h4 style="text-shadow: 2px 2px 6px red;">confirme cambio con su contraseña</h4>
-          </label>
-          <input type="password" class="form-control" id="validationDefault05" required>
-        </div>
-        <div class="col-md-6 ">
-          <label for="validationDefault05" class="form-label">
-            <h4 style="text-shadow: 2px 2px 6px red;">Confirme cambio con su contraseña</h4>
-          </label>
-          <input type="password" class="form-control" id="validationDefault05" required>
-        </div>
-
-        <div class="col-12  ">
-          <button class="btn btn-danger " type="submit ">
-            <h5 style="color: black;">Confirmar modificacion de contraseña</h5>
-          </button>
-        </div>
-
-      </form>
-    
   </div>
 
 
 
+  <div id="section2" class=" container centrado">
 
+    <div class="row" style="margin-top: 16%; margin-bottom: 10%;">
+      <div class="col-md-2 hidden-sm"></div>
+      <div class="col-md-8 col-sm-12  creepyborderegistro">
+        <form action="logueate.html"   name="registro1"> 
+        <div class="col-md-12 letrasajustecuenta">
+          <h1>En este lugar podra modificar su contraseña</h1>
+        </div>
+          <div class="row letrasajustecuenta">
+
+
+            <div class="form-group col-md-6 col-sm-6">
+              <label>
+                <h4>Ingrese su nueva contraseña</h4>
+              </label>
+              <input type="password" name="nuevacontraseña" class="form-control" required>
+            </div>
+
+            <div class="form-group col-md-6 col-sm-6">
+              <label>
+                <h4>Confirme su nueva contraseña</h4>
+              </label>
+              <input type="password" name="nuevacontraseñaconfirmar" class="form-control" required>
+            </div>
+
+            
+            <div class="form-group col-md-6 col-sm-6">
+              <label>
+                <h4>Confirme cambio con su  contraseña</h4>
+              </label>
+              <input type="password" name="confrimarnuevacontraseña" class="form-control" required>
+            </div>
+
+            <div class="form-group col-md-6 col-sm-6">
+              <label>
+                <h4>Confirme cambio con su contraseña</h4>
+              </label>
+              <input type="password" name="confrimarnuevacontraseña2" class="form-control" required>
+            </div>
+
+
+
+            <div class="col-md-3 col-sm-3 "></div>
+            <div class="row espaciado col-md-6 col-sm-6 ">
+              <input type="reset" class="btn btn-danger">
+            </div>
+            <div class="col-md-3 col-sm-3"></div>
+
+            <div class="col-md-3  col-sm-3"></div>
+            <div class="row espaciado col-md-6 col-sm-6 ">
+              <button class="btn btn-danger" type="submit ">
+                <h5>Confirmar creacion de cuenta</h5>
+              </button>
+            </div>
+            <div class="col-md-3 col-sm-3 "></div>
+
+          </div>
+        </form>
+      </div>
+      <div class="col-md-2 hidden-sm"></div>
+    </div>
+
+  </div>
+
+  
 
 </body>
 
