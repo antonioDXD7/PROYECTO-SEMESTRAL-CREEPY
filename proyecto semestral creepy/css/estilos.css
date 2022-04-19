@@ -61,6 +61,12 @@
    border-radius: 20px;
 }
 
+.creepyborderhistorias{
+    /* trata de hacer un borde dependiendo del color del los cuadros del inicio */
+   background: rgba(107, 17, 17, 0.836);
+   border-radius: 20px;
+}
+
 
 .creepybordetushistorias{
     border-radius: 20px;       /* trata de hacer un borde dependiendo del color del los cuadros del inicio */
@@ -95,6 +101,12 @@
     max-width: 300px;
     height: 100%;
     max-height: 300px;
+    
+}
+
+#img_historias { /*modifica el tamaño de la imagen en las historias dentro de los cuadros*/
+    max-width: 1500px;
+    max-height: 450px;
     
 }
 
