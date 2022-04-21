@@ -15,6 +15,11 @@
     padding-top: 16px; /*espacio entre dos cosas*/
 }
 
+.espaciadoadmi{
+    margin-top: 10px; /*espacio entre dos cosas*/
+}
+
+
 .creepyborderegistro{ /* trata de hacer un borde dependiendo del color del los cuadros del inicio */
     background: rgba(134, 2, 2, 0.712);
     border-radius: 70px;
@@ -80,8 +85,7 @@
     border-radius: 20px;       /* trata de hacer un borde dependiendo del color del los cuadros del inicio */
     background: rgba(36, 2, 2, 0.726);
     padding: 20px;
-    width: auto;
-    height: auto;
+  
 }
 
 

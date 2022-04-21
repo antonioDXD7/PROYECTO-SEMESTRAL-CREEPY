@@ -17,51 +17,64 @@
 
 <body class="body1">
 
-  <div class="container-fluid fixed-top col-12 ">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark  fixed-top ">
+    <div class="container-fluid">
+      <a class="navbar-brand " href="inicio.html"><img src="logo bajo menu/creepypasta_logo_fit.png" class="logo_menu"
+          alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto centrado">
+          <li class="nav-item">
+            <a class="nav-link text-danger" href="inicio.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-danger" href="informacion.html">INFORMACIÓN</a>
+          </li>
+          <li class="nav-item dropdown d-flex navbar-nav centrado ">
+            <a class="nav-link dropdown-toggle text-danger" href="#" role="button" data-bs-toggle="dropdown">CUENTA </a>
+            <ul class="dropdown-menu  ">
+              <li><a class="dropdown-item text-danger " href="tuscreepy.html">TUS HISTORIAS</a></li>
+              <li><a class="dropdown-item text-danger " href="menuadmi.html">COSAS ADMI</a></li>
+              <li><a class="dropdown-item text-danger " href="ajustecuenta.html">AJUSTES DATOS</a></li>
+              <li><a class="dropdown-item text-danger " href="ajustecuentacontraseña.html">AJUSTES CONTRASEÑA</a></li>
+              <li><a class="dropdown-item text-danger " href="inicio.html">CERRAR SESIÓN</a></li>
+            </ul>
+          </li>
+        </ul>
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark espaciado ">
-      <div class="container-fluid">
-        <a class="navbar-brand " href="inicio.html"><img src="logo bajo menu/creepypasta_logo_fit.png" class="logo_menu"
-            alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mynavbar">
-          <ul class="navbar-nav me-auto centrado">
-            <li class="nav-item ">
-              <a class="nav-link text-danger" href="inicio.html">VOLVER SIN MODIFICAR</a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link text-danger" href="#section1">MODIFICAR DATOS</a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link text-danger" href="#section2">MODIFICAR CONTRASEÑA</a>
-            </li>
-          </ul>
-  
-        </div>
+        <ul class="nav justify-content-end navbar-nav centrado">
+          <li class="nav-item">
+            <a class="nav-link text-danger" href="logueate.html">LOGIN</a>
+          </li>
+        </ul>
+        <ul class="nav justify-content-end navbar-nav centrado">
+          <li class="nav-item">
+            <a class="nav-link text-danger" href="registrate.html">REGISTER</a>
+          </li>
+        </ul>
+
       </div>
-    </nav>
+    </div>
+  </nav>
 
 
-  </div>
-
- 
 
 
   <div id="section1" class=" container centrado espaciado">
 
-    <div class="row" style="margin-top: 6%;">
+    <div class="row" style="margin-top: 6%; margin-bottom: 5%;">
       <div class="col-md-2 hidden-sm"></div>
       <div class="col-md-8 col-sm-12  creepyborderegistro">
-        <form action="inicio.html"   name="ajustedecuenta">
+        <form action="inicio.html" name="ajustedecuenta">
           <div class="row letrasajustecuenta">
 
-            <div class="form-group col-md-12 col-sm-12 "  >
+            <div class="form-group col-md-12 col-sm-12 ">
               <label>
                 <h4>Su nombre actualmente es:</h4>
               </label>
-              <input type="text" name="ejemplonombre" class="form-control" >
+              <input type="text" name="ejemplonombre" class="form-control">
             </div>
 
             <div class="form-group col-md-6 col-sm-6">
@@ -83,7 +96,7 @@
               <label>
                 <h4>Su correo Electronico actualmente es:</h4>
               </label>
-              <input type="email" name="ejemplocorreo" class="form-control" >
+              <input type="email" name="ejemplocorreo" class="form-control">
             </div>
 
             <div class="form-group col-md-6 col-sm-6">
@@ -101,7 +114,7 @@
             </div>
 
             <div class="col-md-12 col-sm-12 espaciado">
-              <h1 >Confirme cambio con su contraseña</h1>
+              <h2>Confirme cambio con su contraseña</h2>
             </div>
 
 
@@ -135,7 +148,7 @@
               </button>
             </div>
             <div class="col-md-3 col-sm-3 "></div>
-
+            <h3 style="color: rgb(255, 0, 0);">PD:Por seguridad no le comparta a nadie estos datos </h3>
           </div>
         </form>
       </div>
@@ -146,72 +159,6 @@
 
 
 
-  <div id="section2" class=" container centrado">
-
-    <div class="row" style="margin-top: 16%; margin-bottom: 10%;">
-      <div class="col-md-2 hidden-sm"></div>
-      <div class="col-md-8 col-sm-12  creepyborderegistro">
-        <form action="logueate.html"   name="registro1"> 
-        <div class="col-md-12 letrasajustecuenta">
-          <h1>En este lugar podra modificar su contraseña</h1>
-        </div>
-          <div class="row letrasajustecuenta">
-
-
-            <div class="form-group col-md-6 col-sm-6">
-              <label>
-                <h4>Ingrese su nueva contraseña</h4>
-              </label>
-              <input type="password" name="nuevacontraseña" class="form-control" required>
-            </div>
-
-            <div class="form-group col-md-6 col-sm-6">
-              <label>
-                <h4>Confirme su nueva contraseña</h4>
-              </label>
-              <input type="password" name="nuevacontraseñaconfirmar" class="form-control" required>
-            </div>
-
-            
-            <div class="form-group col-md-6 col-sm-6">
-              <label>
-                <h4>Confirme cambio con su  contraseña</h4>
-              </label>
-              <input type="password" name="confrimarnuevacontraseña" class="form-control" required>
-            </div>
-
-            <div class="form-group col-md-6 col-sm-6">
-              <label>
-                <h4>Confirme cambio con su contraseña</h4>
-              </label>
-              <input type="password" name="confrimarnuevacontraseña2" class="form-control" required>
-            </div>
-
-
-
-            <div class="col-md-3 col-sm-3 "></div>
-            <div class="row espaciado col-md-6 col-sm-6 ">
-              <input type="reset" class="btn btn-danger">
-            </div>
-            <div class="col-md-3 col-sm-3"></div>
-
-            <div class="col-md-3  col-sm-3"></div>
-            <div class="row espaciado col-md-6 col-sm-6 ">
-              <button class="btn btn-danger" type="submit ">
-                <h5>Confirmar creacion de cuenta</h5>
-              </button>
-            </div>
-            <div class="col-md-3 col-sm-3 "></div>
-
-          </div>
-        </form>
-      </div>
-      <div class="col-md-2 hidden-sm"></div>
-    </div>
-
-  </div>
-
-  
 
 </body>
 
