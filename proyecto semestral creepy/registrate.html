@@ -11,6 +11,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/estilos.css">
 
 </head>
@@ -67,7 +68,7 @@
     <div class="row" style="margin-top: 10%; margin-bottom: 5%;">
       <div class="col-md-2 hidden-sm"></div>
       <div class="col-md-8 col-sm-12  creepyborderegistro">
-        <form action="logueate.html"   name="registro1">
+        <form action="logueate.html" name="registro1" id="registrof">
           <h1 class="centrado letrasregistroylogin">Formulario de registro</h1>
           <div class="row letrasregistroylogin">
 
@@ -75,7 +76,7 @@
               <label>
                 <h4>Ingrese un nombre</h4>
               </label>
-              <input type="text" name="nombreregistro" class="form-control" required>
+              <input type="text" id="nombreregistro" name="nombreregistro" class="form-control" required>
             </div>
             <div class="form-group col-md-6 col-sm-6">
               <label>
@@ -129,7 +130,11 @@
               </button>
             </div>
             <div class="col-md-3 col-sm-3 "></div>
-            <h3 style="color: rgb(255, 0, 0);">PD:Por seguridad no le comparta a nadie estos datos </h3>
+            <h3 style="color: rgb(255, 0, 0);">PD:Por seguridad no le comparta a nadie estos datos , EL nombre t
+              apellido debe
+              inicar con mayusculas y tener una determinada cantidad de letras </h3>
+
+            <p id="mensajes"></p>
 
           </div>
         </form>
@@ -138,6 +143,8 @@
     </div>
 
   </div>
+
+  <script src="js/validacionregistro.js"></script>
 
 </body>
 

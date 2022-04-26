@@ -10,7 +10,7 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/estilos.css">
 
 </head>
@@ -82,7 +82,7 @@
       <div class="col-md-2 hidden-sm"></div>
 
       <div class="col-md-8 col-sm-12  creepyborderegistro">
-        <form action="tuscreepy.html"  enctype="multipart/form-data" name="registrosubir">
+        <form action="tuscreepy.html"  id="subircreepy" enctype="multipart/form-data" name="registrosubir">
           <h1 class="centrado letrasregistroylogin">SUBIDA DE CREEPYPASTA</h1>
           <div class="row letrasregistroylogin">
 
@@ -124,7 +124,7 @@
 
             <div class="form-group col-md-12 col-sm-12">
               <label>
-                <h4>Ingrese un resumen corto de su historia <br>(DEBE TENER ENTRE 80 Y 86 PALABRAS CONTANDO ESPACIOS Y SIMBOLOS)</h4>
+                <h4>Ingrese un resumen corto de su historia <br>(DEBE TENER ENTRE 90 Y 103 PALABRAS CONTANDO ESPACIOS Y SIMBOLOS)</h4>
               </label>
               <textarea type="text" class="form-control" rows="2" id="resumencreepy" name="text" required></textarea>
             </div>
@@ -151,6 +151,8 @@
               <input type="reset" class="btn btn-danger">
             </div>
             <div class="col-md-3 col-sm-5 espaciado"></div>
+            
+            <p id="mensajesc"></p>
 
           </div>
         </form>
@@ -162,7 +164,7 @@
 
 
 
- 
+  <script src="js/validacioncrearcreepy.js"></script>
 
 </body>
 
