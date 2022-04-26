@@ -23,6 +23,54 @@ $(document).ready(function () {
             entrar = true;
         }
 
+        var apellido = $("#apellidoregistro").val();
+        if (apellido.trim().length < 4 || apellido.trim().length > 9) {
+            mensajesMostrar += "la longitud del apellido no es la correcta <br>"
+            entrar = true;
+        }
+
+        var letrainicial1 = apellido.charAt(0);
+        if (!esMAYUSCULA(letrainicial1)) {
+            mensajesMostrar += "la primera letra del apellido es minuscula <br>"
+            entrar = true;
+        }
+
+
+        var contraseña = $("#contraseñaregistro").val();
+        if (contraseña.trim().length < 8) {
+            mensajesMostrar += "la contraseña debe tener minimo 8 caracteres <br>"
+            entrar = true;
+        }
+
+        var letrainicial2 = contraseña.charAt(0);
+        if (!esMAYUSCULA(letrainicial2)) {
+            mensajesMostrar += "la primera letra debe de ser una letra mayuscula<br>"
+            entrar = true;
+        }
+
+        
+    
+        var contraseñaconfirmar = $("#confirmarcontraseñaregistro").val();
+        if (contraseñaconfirmar != contraseña ){
+           mensajesMostrar += "las contraseñas no coinciden <br>" 
+           entrar = true;
+        }
+        
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
         if (entrar) {
             $("#mensajes").html(mensajesMostrar);
         }
