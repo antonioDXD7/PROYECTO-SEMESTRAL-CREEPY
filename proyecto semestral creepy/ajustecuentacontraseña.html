@@ -10,7 +10,7 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/estilos.css">
 
 </head>
@@ -66,7 +66,7 @@
     <div class="row" style="margin-top: 14%; margin-bottom: 8%;">
       <div class="col-md-2 hidden-sm"></div>
       <div class="col-md-8 col-sm-12  creepyborderegistro">
-        <form action="logueate.html"   name="registro1"> 
+        <form action="logueate.html" id="ajustecontraseña"  name="registro1"> 
         <div class="col-md-12 letrasajustecuenta">
           <h1>En este lugar podra modificar su contraseña</h1>
         </div>
@@ -77,14 +77,14 @@
               <label>
                 <h4>Ingrese su nueva contraseña</h4>
               </label>
-              <input type="password" name="nuevacontraseña" class="form-control" required>
+              <input type="password" id="nuevacontraseña" name="nuevacontraseña" class="form-control" required>
             </div>
 
             <div class="form-group col-md-6 col-sm-6">
               <label>
                 <h4>Confirme su nueva contraseña</h4>
               </label>
-              <input type="password" name="nuevacontraseñaconfirmar" class="form-control" required>
+              <input type="password" id="confirmarnuevacontraseña" name="nuevacontraseñaconfirmar" class="form-control" required>
             </div>
 
             
@@ -92,14 +92,14 @@
               <label>
                 <h4>Confirme cambio con su  contraseña</h4>
               </label>
-              <input type="password" name="confrimarnuevacontraseña" class="form-control" required>
+              <input type="password" id="contraseña2" name="confrimarnuevacontraseña" class="form-control" required>
             </div>
 
             <div class="form-group col-md-6 col-sm-6">
               <label>
                 <h4>Confirme cambio con su contraseña</h4>
               </label>
-              <input type="password" name="confrimarnuevacontraseña2" class="form-control" required>
+              <input type="password" id="confirmarcontraseña" name="confrimarnuevacontraseña2" class="form-control" required>
             </div>
 
 
@@ -117,6 +117,9 @@
               </button>
             </div>
             <div class="col-md-3 col-sm-3 "></div>
+
+            <p id="mensajes"></p>
+
             <h3 style="color: rgb(255, 0, 0);">PD:Por seguridad no le comparta a nadie estos datos </h3>
           </div>
         </form>
@@ -126,7 +129,7 @@
 
   </div>
 
-  
+  <script src="js/validacionajustecontraseña.js"></script>
 
 </body>
 

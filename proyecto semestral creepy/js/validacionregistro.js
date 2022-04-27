@@ -36,6 +36,21 @@ $(document).ready(function () {
         }
 
 
+
+        var correoderegistro = $("#registrocorreo").val();
+        if (correoderegistro.trim().length < 8) {
+            mensajesMostrar += "el correo debe tener minimo 8 caracteres <br>"
+            entrar = true;
+        }
+
+        var letrainicial2 = correoderegistro.charAt(0);
+        if (!esMAYUSCULA(letrainicial2)) {
+            mensajesMostrar += "la primera letra del correo debe de ser una  mayuscula<br>"
+            entrar = true;
+        }
+
+
+
         var contraseña = $("#contraseñaregistro").val();
         if (contraseña.trim().length < 8) {
             mensajesMostrar += "la contraseña debe tener minimo 8 caracteres <br>"
@@ -55,6 +70,8 @@ $(document).ready(function () {
            mensajesMostrar += "las contraseñas no coinciden <br>" 
            entrar = true;
         }
+        
+
         
 
 

@@ -10,7 +10,7 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/estilos.css">
 
 </head>
@@ -67,50 +67,50 @@
     <div class="row" style="margin-top: 6%; margin-bottom: 5%;">
       <div class="col-md-2 hidden-sm"></div>
       <div class="col-md-8 col-sm-12  creepyborderegistro">
-        <form action="inicio.html" name="ajustedecuenta">
+        <form action="inicio.html" id="ajustedatoscuenta" name="ajustedecuenta">
           <div class="row letrasajustecuenta">
 
             <div class="form-group col-md-12 col-sm-12 ">
-              <label>
-                <h4>Su nombre actualmente es:</h4>
-              </label>
-              <input type="text" name="ejemplonombre" class="form-control">
+
+              <h4>Su nombre actualmente es:</h4>
+
+              <h4>Axel Cisternas</h4>
             </div>
 
             <div class="form-group col-md-6 col-sm-6">
               <label>
                 <h4>Ingrese su nuevo nombre nombre</h4>
               </label>
-              <input type="text" name="nuevonombre" class="form-control" required>
+              <input type="text" id="cambionombre" name="nuevonombre" class="form-control" required>
             </div>
 
             <div class="form-group col-md-6 col-sm-6">
               <label>
                 <h4>Ingrese su nuevo apellido</h4>
               </label>
-              <input type="text" name="nuevoapellido" class="form-control" required>
+              <input type="text" id="cambioapellido" name="nuevoapellido" class="form-control" required>
             </div>
 
 
             <div class="form-group col-md-12 col-sm-12 espaciado">
-              <label>
-                <h4>Su correo Electronico actualmente es:</h4>
-              </label>
-              <input type="email" name="ejemplocorreo" class="form-control">
+
+              <h4>Su correo Electronico actualmente es:</h4>
+
+              <H4>Axelmirai@duocuc.cl</H4>
             </div>
 
             <div class="form-group col-md-6 col-sm-6">
               <label>
                 <h4>Ingrese su nuevo correo Electronico</h4>
               </label>
-              <input type="email" name="correocambio" class="form-control" required>
+              <input type="email" id="nuevoscorreo" name="correocambio" class="form-control" required>
             </div>
 
             <div class="form-group col-md-6 col-sm-6">
               <label>
                 <h4>Confirme su nuevo correo Electronico</h4>
               </label>
-              <input type="email" name="confirmarnuevocorreo" class="form-control" required>
+              <input type="email" id="confirmarnuevocorreo" name="confirmarnuevocorreo" class="form-control" required>
             </div>
 
             <div class="col-md-12 col-sm-12 espaciado">
@@ -123,14 +123,14 @@
               <label>
                 <h4>Ingrese su contraseña</h4>
               </label>
-              <input type="password" name="contraseñaconfirmarcambios" class="form-control" required>
+              <input type="password" id="ingresarcontraseña" name="contraseñaconfirmarcambios" class="form-control" required>
             </div>
 
             <div class="form-group col-md-6 col-sm-6">
               <label>
                 <h4>Confirme su contraseña</h4>
               </label>
-              <input type="password" name="contraseñaconfirmarcambios2" class="form-control" required>
+              <input type="password" id="confirmarconcontraseña" name="contraseñaconfirmarcambios2" class="form-control" required>
             </div>
 
 
@@ -144,11 +144,14 @@
             <div class="col-md-3  col-sm-3"></div>
             <div class="row espaciado col-md-6 col-sm-6 ">
               <button class="btn btn-danger" type="submit ">
-                <h5>Confirmar creacion de cuenta</h5>
+                <h5>Confirmar modificacion de cuenta</h5>
               </button>
             </div>
             <div class="col-md-3 col-sm-3 "></div>
-            <h3 style="color: rgb(255, 0, 0);">PD:Por seguridad no le comparta a nadie estos datos </h3>
+
+            <p id="mensajes"></p>
+
+            <h3 >PD:Por seguridad no le comparta a nadie estos datos </h3>
           </div>
         </form>
       </div>
@@ -158,7 +161,7 @@
   </div>
 
 
-
+  <script src="js/validacionajusdatos.js"></script>
 
 </body>
 
