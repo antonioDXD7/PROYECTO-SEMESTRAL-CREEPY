@@ -25,7 +25,7 @@ $(document).ready(function () {
 
         var apellido = $("#apellidoregistro").val();
         if (apellido.trim().length < 4 || apellido.trim().length > 9) {
-            mensajesMostrar += "La longitud del apellido no es la correcta(min 4 y max 9) <br>"
+            mensajesMostrar += "La longitud del apellido no es la correcta(min 3 y max 12) <br>"
             entrar = true;
         }
 
