@@ -11,8 +11,8 @@ $(document).ready(function () {
 
 
         var cambionombres = $("#cambionombre").val();
-        if (cambionombres.trim().length < 4 || cambionombres.trim().length > 9) {
-            mensajesMostrar1 += "El nombre debe tener minimo 4 letras max 9 <br>"
+        if (cambionombres.trim().length < 3 || cambionombres.trim().length > 9) {
+            mensajesMostrar1 += "El nombre debe tener minimo 3 letras max 9 <br>"
             entrar1 = true;
         }
 
@@ -25,8 +25,8 @@ $(document).ready(function () {
         }
 
         var cambioapellido = $("#cambioapellido").val();
-        if (cambioapellido.trim().length < 4 || cambioapellido.trim().length > 9) {
-            mensajesMostrar1 += "El apellido debe tener minimo 4 letras max 9 <br>"
+        if (cambioapellido.trim().length < 3 || cambioapellido.trim().length > 9) {
+            mensajesMostrar1 += "El apellido debe tener minimo 3 letras max 9 <br>"
             entrar1 = true;
         }
 

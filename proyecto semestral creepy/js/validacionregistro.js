@@ -10,7 +10,7 @@ $(document).ready(function () {
 
 
         var nombre = $("#nombreregistro").val();
-        if (nombre.trim().length < 4 || nombre.trim().length > 9) {
+        if (nombre.trim().length < 3 || nombre.trim().length > 9) {
             mensajesMostrar += "La longitud del nombre no es correcto(min 4 y max 9) <br>"
             entrar = true;
         }
@@ -24,7 +24,7 @@ $(document).ready(function () {
         }
 
         var apellido = $("#apellidoregistro").val();
-        if (apellido.trim().length < 4 || apellido.trim().length > 9) {
+        if (apellido.trim().length < 3 || apellido.trim().length > 9) {
             mensajesMostrar += "La longitud del apellido no es la correcta(min 3 y max 12) <br>"
             entrar = true;
         }
