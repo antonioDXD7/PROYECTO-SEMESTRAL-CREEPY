@@ -11,7 +11,7 @@ $(document).ready(function () {
 
         var nombre = $("#nombreregistro").val();
         if (nombre.trim().length < 4 || nombre.trim().length > 9) {
-            mensajesMostrar += "la longitud del nombre no es correcto <br>"
+            mensajesMostrar += "La longitud del nombre no es correcto(min 4 y max 9) <br>"
             entrar = true;
         }
 
@@ -19,19 +19,19 @@ $(document).ready(function () {
 
         var letrainicial = nombre.charAt(0);
         if (!esMAYUSCULA(letrainicial)) {
-            mensajesMostrar += "la primera letra del nombre es minuscula <br>"
+            mensajesMostrar += "La primera letra del nombre es minuscula <br>"
             entrar = true;
         }
 
         var apellido = $("#apellidoregistro").val();
         if (apellido.trim().length < 4 || apellido.trim().length > 9) {
-            mensajesMostrar += "la longitud del apellido no es la correcta <br>"
+            mensajesMostrar += "La longitud del apellido no es la correcta(min 4 y max 9) <br>"
             entrar = true;
         }
 
         var letrainicial1 = apellido.charAt(0);
         if (!esMAYUSCULA(letrainicial1)) {
-            mensajesMostrar += "la primera letra del apellido es minuscula <br>"
+            mensajesMostrar += "La primera letra del apellido es minuscula <br>"
             entrar = true;
         }
 
@@ -39,27 +39,20 @@ $(document).ready(function () {
 
         var correoderegistro = $("#registrocorreo").val();
         if (correoderegistro.trim().length < 8) {
-            mensajesMostrar += "el correo debe tener minimo 8 caracteres <br>"
+            mensajesMostrar += "El correo debe tener minimo 8 caracteres <br>"
             entrar = true;
         }
-
-        var letrainicial2 = correoderegistro.charAt(0);
-        if (!esMAYUSCULA(letrainicial2)) {
-            mensajesMostrar += "la primera letra del correo debe de ser una  mayuscula<br>"
-            entrar = true;
-        }
-
 
 
         var contraseña = $("#contraseñaregistro").val();
         if (contraseña.trim().length < 8) {
-            mensajesMostrar += "la contraseña debe tener minimo 8 caracteres <br>"
+            mensajesMostrar += "La contraseña debe tener minimo 8 caracteres <br>"
             entrar = true;
         }
 
         var letrainicial2 = contraseña.charAt(0);
         if (!esMAYUSCULA(letrainicial2)) {
-            mensajesMostrar += "la primera letra debe de ser una letra mayuscula<br>"
+            mensajesMostrar += "La primera letra de la contraseña debe de ser una letra mayuscula<br>"
             entrar = true;
         }
 
@@ -67,9 +60,14 @@ $(document).ready(function () {
     
         var contraseñaconfirmar = $("#confirmarcontraseñaregistro").val();
         if (contraseñaconfirmar != contraseña ){
-           mensajesMostrar += "las contraseñas no coinciden <br>" 
+           mensajesMostrar += "Las contraseñas no coinciden <br>" 
            entrar = true;
         }
+
+
+        
+
+
         
 
         

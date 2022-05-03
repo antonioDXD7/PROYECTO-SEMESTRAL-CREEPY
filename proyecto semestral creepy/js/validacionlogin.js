@@ -10,26 +10,26 @@ $(document).ready(function () {
 
         var contraseñalogin = $("#contraseñalogin").val();
         if (contraseñalogin.trim().length < 8) {
-            mensajesMostrar += "la contraseña debe tener minimo 8 caracteres <br>"
+            mensajesMostrar += "La contraseña debe tener minimo 8 caracteres <br>"
             entrar = true;
         }
 
         var letrainicial = contraseñalogin.charAt(0);
         if (!esMAYUSCULA(letrainicial)) {
-            mensajesMostrar += "la primera letra debe de ser  mayuscula<br>"
+            mensajesMostrar += "La primera letra de la contraseña debe de ser  mayuscula<br>"
             entrar = true;
         }
 
 
         var logincorreo = $("#logincorreo").val();
         if (logincorreo.trim().length < 8) {
-            mensajesMostrar += "el correo debe tener minimo 8 caracteres <br>"
+            mensajesMostrar += "El correo debe tener minimo 8 caracteres <br>"
             entrar = true;
         }
 
         var letrainicial2 = logincorreo.charAt(0);
         if (!esMAYUSCULA(letrainicial2)) {
-            mensajesMostrar += "la primera letra del correo debe de ser una  mayuscula<br>"
+            mensajesMostrar += "La primera letra del correo debe de ser una  mayuscula<br>"
             entrar = true;
         }
 

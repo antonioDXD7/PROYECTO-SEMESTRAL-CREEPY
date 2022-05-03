@@ -87,7 +87,7 @@
     border-radius: 20px;       /* trata de hacer un borde dependiendo del color del los cuadros del inicio */
     background: rgba(36, 2, 2, 0.726);
     padding: 20px;
-  
+  margin-left: 1px;
 }
 
 

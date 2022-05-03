@@ -10,13 +10,13 @@ $(document).ready(function () {
 
         var contraseñalogin = $("#mensajeadmi").val();
         if (contraseñalogin.trim().length < 50 || contraseñalogin.trim().length > 200) {
-            mensajesMostrar += "el mensaje  debe tener entre 50 y 200  caracteres <br> sin repetir bastante una palabras tipo :aaaaaaaaa o palapalapalapala  <br>"
+            mensajesMostrar += "El mensaje  debe tener entre 50 y 200  caracteres <br> sin repetir bastante una palabras tipo :aaaaaaaaa o palapalapalapala  <br>"
             entrar = true;
         }
 
         var letrainicial = contraseñalogin.charAt(0);
         if (!esMAYUSCULA(letrainicial)) {
-            mensajesMostrar += "la primera letra debe de ser  mayuscula<br>"
+            mensajesMostrar += "La primera letra debe de ser  mayuscula<br>"
             entrar = true;
         }
         

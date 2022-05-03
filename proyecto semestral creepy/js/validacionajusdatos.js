@@ -12,7 +12,7 @@ $(document).ready(function () {
 
         var cambionombres = $("#cambionombre").val();
         if (cambionombres.trim().length < 4 || cambionombres.trim().length > 9) {
-            mensajesMostrar1 += "el nombre debe tener minimo 4 letras max 9 <br>"
+            mensajesMostrar1 += "El nombre debe tener minimo 4 letras max 9 <br>"
             entrar1 = true;
         }
 
@@ -20,19 +20,19 @@ $(document).ready(function () {
 
         var letrainicial = cambionombres.charAt(0);
         if (!esMAYUSCULA(letrainicial)) {
-            mensajesMostrar1 += "la primera letra del nombre es minuscula <br>"
+            mensajesMostrar1 += "La primera letra del nombre es minuscula <br>"
             entrar1 = true;
         }
 
         var cambioapellido = $("#cambioapellido").val();
         if (cambioapellido.trim().length < 4 || cambioapellido.trim().length > 9) {
-            mensajesMostrar1 += "el apellido debe tener minimo 4 letras max 9 <br>"
+            mensajesMostrar1 += "El apellido debe tener minimo 4 letras max 9 <br>"
             entrar1 = true;
         }
 
         var letrainicial1 = cambioapellido.charAt(0);
         if (!esMAYUSCULA(letrainicial1)) {
-            mensajesMostrar1 += "la primera letra del apellido es minuscula <br>"
+            mensajesMostrar1 += "La primera letra del apellido es minuscula <br>"
             entrar1 = true;
         }
 
@@ -42,21 +42,16 @@ $(document).ready(function () {
 
         var nuevocorreo = $("#nuevoscorreo").val();
         if (nuevocorreo.trim().length < 8) {
-            mensajesMostrar1 += "el correo debe tener minimo 8 caracteres <br>"
+            mensajesMostrar1 += "El correo debe tener minimo 8 caracteres <br>"
             entrar1 = true;
         }
 
-        var letrainicial2 = nuevocorreo.charAt(0);
-        if (!esMAYUSCULA(letrainicial2)) {
-            mensajesMostrar1 += "la primera letra del correo debe de ser una  mayuscula<br>"
-            entrar1 = true;
-        }
 
         
     
         var confirmarnuevocorreo = $("#confirmarnuevocorreo").val();
         if (confirmarnuevocorreo != nuevocorreo ){
-           mensajesMostrar1 += "los correos no coinciden <br>" 
+           mensajesMostrar1 += "Los correos no coinciden <br>" 
            entrar1 = true;
         }
 
